@@ -1,6 +1,7 @@
 package com.sandaruwani.handymanservice.controller;
 
 
+import com.sandaruwani.handymanservice.dto.UserRequest;
 import com.sandaruwani.handymanservice.model.User;
 import com.sandaruwani.handymanservice.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,7 +35,7 @@ public class UserController {
     }
 
     @PostMapping()
-    public void createUser(@RequestBody User user){
+    public void createUser(@RequestBody UserRequest userRequest){
 
     }
 
